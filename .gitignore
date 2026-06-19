@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.*
+.dev.vars
+*.local
+coverage/
+.DS_Store
+*.log
+PLAN/
+.wrangler/
+.claude/
+ARCHITECTURE.md
+PLAN.md
+PROJECT_SPEC.md

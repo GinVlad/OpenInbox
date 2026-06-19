@@ -1,0 +1,27 @@
+name = "openinbox-worker"
+main = "src/index.ts"
+compatibility_date = "2025-03-01"
+minify = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "openinbox"
+database_id = ""
+
+[triggers]
+crons = ["0 * * * *"]
+
+[vars]
+EMAIL_DOMAIN = "example.com,test.com"
+TURNSTILE_KEY = ""
+TURNSTILE_SECRET = ""
+COOKIES_SECRET = ""
+PASSWORD = ""
+API_KEY = ""
+API_RATE_LIMIT_PER_MINUTE = "60"
+SHOW_ADS = "false"
+ENABLE_OPENAPI = "false"
+
+[assets]
+binding = "ASSETS"
+directory = "../frontend/dist"
